@@ -15,7 +15,7 @@ public class TxTest {
                 new AnnotationConfigApplicationContext(TxConfig.class);
 
         UserService userService = applicationContext.getBean(UserService.class);
-        userService.insertUser();
+        userService.insertUser2();
         applicationContext.close();
 
     }

@@ -15,10 +15,21 @@ public class UserService {
     @Autowired
     private UserDao userDao;
 
+    public void insertUser1(){
+//        userDao.insert();
+//        System.out.println("insert complete1");
+//        int i = 10 / 0;
+        insertUser2();
+    }
     @Transactional
-    public void insertUser(){
-        userDao.insert();
-        System.out.println("insert complete1");
-        int i = 10 / 0;
+    public void insertUser2(){
+        try {
+
+            userDao.insert();
+            System.out.println("insert complete1");
+            int i = 10 / 0;
+        }catch (Exception e){
+
+        }
     }
 }

@@ -20,6 +20,6 @@ public class UserDao {
     public void insert(){
         String sql = "insert into test.tb1_user(username, age) values(?, ?)";
         String username = UUID.randomUUID().toString().substring(0, 5);
-        jdbcTemplate.update(sql, username, 19);
+        jdbcTemplate.update(sql, username, 22);
     }
 }
